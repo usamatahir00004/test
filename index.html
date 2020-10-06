@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator for Practice</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS only -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+</head>
+
+<body>
+
+
+    <h1 style="text-align: center">Calculator for JS Practice</h1>
+
+    <div class="container">
+
+
+        <form name="form">
+            <div class="calc_screen">
+                <input type="text" placeholder="0" name="displayResult">
+            </div>
+
+            <div class="buttons">
+                <div class="row">
+                    <input type="button" name="seven" value="7" onClick="calculation(seven.value)">
+                    <input type="button" name="eight" value="8" onClick="calculation(eight.value)">
+                    <input type="button" name="nine" value="9" onClick="calculation(nine.value)">
+                    <input type="button" name="add" value="+" onClick="calculation(add.value)">
+                </div>
+                <div class="row">
+                    <input type="button" name="four" value="4" onClick="calculation(four.value)">
+                    <input type="button" name="five" value="5" onClick="calculation(five.value)">
+                    <input type="button" name="six" value="6" onClick="calculation(six.value)">
+                    <input type="button" name="subtract" value="-" onClick="calculation(subtract.value)">
+                </div>
+                <div class="row">
+                    <input type="button" name="one" value="1" onClick="calculation(one.value)">
+                    <input type="button" name="two" value="2" onClick="calculation(two.value)">
+                    <input type="button" name="three" value="3" onClick="calculation(three.value)">
+                    <input type="button" name="multiply" value="*" onClick="calculation(multiply.value)">
+                </div>
+                <div class="row">
+                    <input type="button" name="zero" value="0" onClick="calculation(zero.value)">
+                    <input type="button" name="point" value="." onClick="calculation(point.value)">
+                    <input type="button" name="divide" value="/" onClick="calculation
+                    (divide.value)">
+                    <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+                </div>
+                <div class="row" align-content="center">
+                    <input class="btn btn-primary" type="button" value="clr" onclick="clearInput()">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
